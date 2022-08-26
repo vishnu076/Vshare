@@ -1,0 +1,37 @@
+<MyWidget>
+    cols:2
+    id:my_widget
+    orientation:'vertical'
+    pos:(0,0)
+   
+
+
+    FileChooserIconView:
+        
+        color:0,0,0,1
+        id:filechooser
+        size_hint:(1,None)
+        height:600
+        multiselect:True
+        dirselect:True
+        on_selection:my_widget.selected(filechooser.selection)
+
+   
+   #  BoxLayout:
+       
+    #   minimum_height:5
+    #    padding:48
+    #    spacing:5
+
+        
+    #    Button:
+    #        id:send
+    #        text:"1.Send"
+    #        pos_hint:{"x":0.0,"y":.0}
+    #        size_hint:(0.2,0.8)
+    #        on_press:root.printpress()
+    #    Button:
+    #        text:"recive"
+    #        pos_hint:{"x":0,"y":0} 
+    #        size_hint:(0.2,0.8)
+    #        '''
